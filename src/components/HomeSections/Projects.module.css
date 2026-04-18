@@ -1,0 +1,64 @@
+.projectsSection {
+    background-image: url('../../assets/projectsImage.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.projectsContent {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 800px){
+    .projectsContent {
+        flex-direction: column;
+    }
+}
+
+h3 {
+    width: fit-content;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 900px){
+    h3 {
+        font-size: 2rem;
+    }
+}
+
+.projectsContent > button {
+    border: 1px solid transparent;
+    color: #2b2b2b;
+    transition: all 0.5s ease;
+}
+
+.projectsContent > button:hover {
+    cursor: pointer;
+    background-color: #353535;
+    color: white;
+}
+
+.notchWrapperProjects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notchProjects {
+    width: 75%;
+    height: 6rem;
+    background-color: #353535;
+    border-radius: 2rem 2rem 0 0;
+}
+
+@media screen and (max-width: 800px){
+    .notchProjects {
+        width: 95%;
+    }
+}
