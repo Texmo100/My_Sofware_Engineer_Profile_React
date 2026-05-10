@@ -1,0 +1,179 @@
+.aboutMe {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    background-color: #353535;
+    grid-template-columns: 1fr;
+    grid-template-rows: 90vh minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto) 10rem;
+    color: #ffffff;
+}
+
+.aboutMeHeader {
+    position: relative;
+    background-image: url('../assets/aboutMeImage.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutMeHeader::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 90vh;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.aboutMeHeader > * {
+    position: relative;
+    z-index: 2;
+}
+
+.sectionWrapper {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.aboutMeHeader > h1 {
+    display: block;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.aboutMeHeader > p {
+    text-align: justify;
+    font-size: 1.2rem;
+}
+
+/* aboutMeCareer */
+
+.aboutMeCareer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.aboutMeCareer h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.careerHistory {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@media screen and (max-width: 900px) {
+    .careerHistory {
+        height: 100%;
+        flex-direction: column;
+    }
+}
+
+.careerHistoryItem {
+    flex-basis: calc(33.33%);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    margin: 1rem;
+    border: 0.5px solid #ffffff;
+    border-radius: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .careerHistoryItem {
+        width: 100%;
+    }
+}
+
+.careerHistoryItem p {
+    margin: 0.2rem 0;
+}
+
+.careerHistoryItem > p:first-child {
+    font-weight: bold;
+}
+
+/* aboutMeSkills */
+
+.aboutMeSkills, .aboutMeCertifications {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMeSkills h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.skillsWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skillsGroup {
+    width: 100%;
+    height: 10rem;
+    border: 0.5px solid #ffffff;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.skillsGroup > p {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* certifications */
+
+.aboutMeCertifications > h4 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.certificationsWrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.certificationItem {
+    flex-basis: calc(30.3%);
+    height: 10rem;
+    border: 0.5px solid #ffffff;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}

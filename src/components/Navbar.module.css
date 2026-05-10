@@ -43,7 +43,7 @@ nav {
     transition: border 0.4s ease;
 }
 
-.navLink > a:hover {
+.navLink a:hover, .navLink a.active{
     border: 1px solid white;
 }
 
