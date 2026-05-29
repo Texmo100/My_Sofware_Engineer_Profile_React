@@ -1,5 +1,6 @@
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: black;
@@ -9,6 +10,15 @@ footer {
 footer > .reactProjectText {
     font-weight: lighter;
     font-style: italic;
+    margin-bottom: 1rem;
+}
+
+.footerIcon {
+    font-size: 2rem;
+}
+
+.footerIcon:first-child {
+    margin-right: 1rem;
 }
 
 

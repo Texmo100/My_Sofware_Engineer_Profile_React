@@ -4,7 +4,7 @@
     display: grid;
     background-color: #353535;
     grid-template-columns: 1fr;
-    grid-template-rows: 90vh minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto) 10rem;
+    grid-template-rows: 90vh minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto) 15rem;
     color: #ffffff;
 }
 
@@ -46,7 +46,7 @@
     padding: 1rem;
 }
 
-.aboutMeHeader > h1 {
+.sectionWrapper > h1 {
     display: block;
     width: fit-content;
     height: fit-content;
@@ -54,7 +54,7 @@
     font-size: 3rem;
 }
 
-.aboutMeHeader > p {
+.sectionWrapper > p {
     text-align: justify;
     font-size: 1.2rem;
 }
@@ -132,22 +132,50 @@
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
 .skillsGroup {
-    width: 100%;
+    flex: 1 1 calc(35%);
     height: 10rem;
     border: 0.5px solid #ffffff;
     border-radius: 1rem;
-    margin: 1rem;
     padding: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .skillsGroup {
+        flex: 1 1 calc(50%);
+    }
 }
 
 .skillsGroup > p {
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+.skillsGroupIcons {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillIconWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillIcon {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 /* certifications */
@@ -169,11 +197,42 @@
 
 .certificationItem {
     flex-basis: calc(30.3%);
-    height: 10rem;
+    height: 20rem;
     border: 0.5px solid #ffffff;
     border-radius: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    transition: all 0.2s ease;
+}
+
+.certificationItem:hover {
+    background-color: #000000;
+    transform: scale(1.2);
+    border: 1px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .certificationItem {
+        flex-basis: 45%;
+    }
+}
+
+.certificationItemIcon {
+    display: block;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.certificationItem p {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.certificationItem p:first-child {
+    font-size: 1.5rem;
+    font-weight: bold;
 }
