@@ -44,7 +44,20 @@ h1 {
     align-items: center;
 }
 
-.headerButton > button {
+.linkTo {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 10rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.headerButtonLink {
     border: 1px solid transparent;
     backdrop-filter: blur(10px);
     background: rgba(255, 255, 255, 0.3);
@@ -53,7 +66,7 @@ h1 {
     transition: border 0.5s ease;
 }
 
-.headerButton > button:hover {
+.headerButtonLink:hover {
     cursor: pointer;
     border: 1px solid white;
 }
@@ -112,13 +125,13 @@ h2 {
     }
 }
 
-.aboutMeContent > button {
+.aboutMeLink {
     border: 1px solid transparent;
     color: #2b2b2b;
     transition: all 0.5s ease;
 }
 
-.aboutMeContent > button:hover {
+.aboutMeLink:hover {
     cursor: pointer;
     background-color: #353535;
     color: white;
@@ -159,13 +172,13 @@ h3 {
     }
 }
 
-.projectsContent > button {
+.projectsLink {
     border: 1px solid transparent;
     color: #2b2b2b;
     transition: all 0.5s ease;
 }
 
-.projectsContent > button:hover {
+.projectsLink:hover {
     cursor: pointer;
     background-color: #353535;
     color: white;

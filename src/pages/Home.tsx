@@ -1,5 +1,6 @@
 import styles from './Home.module.css';
 import Footer from '../components/Footer';
+import { Link } from 'react-router';
 
 const Home = () => {
     return (
@@ -9,7 +10,7 @@ const Home = () => {
                     <h1>Hey there, I'm Isaac a Software Engineer</h1>
                 </div>
                 <div className={styles.headerButton}>
-                    <button>Let's talk</button>
+                    <Link to='./contact-me' className={`${styles.linkTo} ${styles.headerButtonLink}`}>Let's talk</Link>
                 </div>
             </header>
 
@@ -18,15 +19,15 @@ const Home = () => {
                     <div className={styles.notchAboutMe}></div>
                 </div>
                 <div className={styles.aboutMeContent}>
-                    <button>About me</button>
+                    <Link to='./about-me' className={`${styles.linkTo} ${styles.aboutMeLink}`}>About me</Link>
                     <h2>Explore my career and vision</h2>
                 </div>
             </main>
 
             <section className={styles.projectsSection}>
                 <div className={styles.projectsContent}>
-                    <h3>Get a glance of my work</h3>
-                    <button>Projects</button>
+                    <h3>Get a Glimpse of My Work</h3>
+                    <Link to='./projects' className={`${styles.linkTo} ${styles.projectsLink}`}>Projects</Link>
                 </div>
                 <div className={styles.notchWrapperProjects}>
                     <div className={styles.notchProjects}></div>

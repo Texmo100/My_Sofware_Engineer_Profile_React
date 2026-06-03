@@ -19,6 +19,7 @@ body {
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+  background-color: #353535;
 }
 
 ul {
@@ -30,11 +31,4 @@ ul {
 h1, h2, h3, h4, p {
   margin: 0;
   padding: 0;
-}
-
-button {
-  width: 10rem;
-  height: 3rem;
-  padding: 0.5rem;
-  border-radius: 10rem;
 }
