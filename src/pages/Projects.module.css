@@ -31,12 +31,20 @@
     transition: all 0.2s ease;
 }
 
+@media screen and (max-width: 900px) {
+    .projectCard {
+        width: 70%;
+        height: 25rem;
+    }
+}
+
 .projectCard:hover {
     background-color: #000000;
     transform: scale(1.2);
     border: 1px solid transparent;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+
 .projectCardText {
     text-align: center;
 }

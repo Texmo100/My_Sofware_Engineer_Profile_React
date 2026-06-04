@@ -6,6 +6,7 @@
     grid-template-columns: 1fr;
     grid-template-rows: 90vh minmax(100vh, auto) minmax(100vh, auto) minmax(100vh, auto) 15rem;
     color: #ffffff;
+    row-gap: 3rem;
 }
 
 .aboutMeHeader {
@@ -46,7 +47,7 @@
     padding: 1rem;
 }
 
-.sectionWrapper > h1 {
+.sectionWrapper h1 {
     display: block;
     width: fit-content;
     height: fit-content;
@@ -96,14 +97,24 @@
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    margin: 1rem;
+    margin-right: 1rem;
     border: 0.5px solid #ffffff;
     border-radius: 1rem;
+}
+
+.careerHistoryItem:last-child {
+    margin: 0;
 }
 
 @media screen and (max-width: 900px) {
     .careerHistoryItem {
         width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+
+    .careerHistoryItem:last-child {
+        margin: 0;
     }
 }
 
@@ -138,7 +149,7 @@
 
 .skillsGroup {
     flex: 1 1 calc(35%);
-    height: 10rem;
+    height: fit-content;
     border: 0.5px solid #ffffff;
     border-radius: 1rem;
     padding: 1rem;
@@ -163,6 +174,14 @@
     column-gap: 2rem;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 450px) {
+    .skillsGroupIcons {
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
 }
 
 .skillIconWrapper {
@@ -180,7 +199,7 @@
 
 /* certifications */
 
-.aboutMeCertifications > h4 {
+.aboutMeCertifications h4 {
     font-size: 3rem;
     margin-bottom: 2rem;
 }
@@ -196,7 +215,7 @@
 }
 
 .certificationItem {
-    flex-basis: calc(30.3%);
+    flex-basis: calc(30%);
     height: 20rem;
     border: 0.5px solid #ffffff;
     border-radius: 1rem;
@@ -217,7 +236,12 @@
 
 @media screen and (max-width: 900px) {
     .certificationItem {
-        flex-basis: 45%;
+        flex-basis: 100%;
+        height: 15rem;
+    }
+
+    .certificationItem:hover {
+        transform: none;
     }
 }
 

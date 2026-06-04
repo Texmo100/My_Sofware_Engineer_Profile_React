@@ -7,7 +7,7 @@ const Home = () => {
         <div className={styles.wrapper}>
             <header>
                 <div className={styles.headerTitle}>
-                    <h1>Hey there, I'm Isaac a Software Engineer</h1>
+                    <h1>Hey There, I'm Isaac a Software Engineer</h1>
                 </div>
                 <div className={styles.headerButton}>
                     <Link to='./contact-me' className={`${styles.linkTo} ${styles.headerButtonLink}`}>Let's talk</Link>
@@ -20,7 +20,7 @@ const Home = () => {
                 </div>
                 <div className={styles.aboutMeContent}>
                     <Link to='./about-me' className={`${styles.linkTo} ${styles.aboutMeLink}`}>About me</Link>
-                    <h2>Explore my career and vision</h2>
+                    <h2>Explore My Career and Vision</h2>
                 </div>
             </main>
 
@@ -35,7 +35,7 @@ const Home = () => {
             </section>
 
             <section className={styles.contactMeSection}>
-                <h4>Get in touch</h4>
+                <h4>Get In Touch</h4>
                 <div className={styles.contactMeContent}>
                     <ul>
                         <div className={styles.contactMeItem}>

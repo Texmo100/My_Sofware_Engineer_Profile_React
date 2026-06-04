@@ -1,7 +1,7 @@
 import styles from './Navbar.module.css';
 import { Link, useLocation } from 'react-router';
 
-const Navbar = () => {
+const Navbar = ():React.ReactElement => {
     const location = useLocation();
 
     return (

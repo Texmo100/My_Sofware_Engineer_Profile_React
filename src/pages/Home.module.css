@@ -236,9 +236,9 @@ h4 {
     padding: 1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 450px) {
     .contactMeContent {
-        width: 20rem;
+        width: 70%;
     }
 }
 

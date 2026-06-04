@@ -23,14 +23,8 @@ h1 {
     margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 900px) {
-    h1 {
-        font-size: 2rem;
-    }
-}
-
 .contactMeCard {
-    width: 40rem;
+    width: 50%;
     height: 20rem;
     display: flex;
     justify-content: center;
@@ -40,9 +34,9 @@ h1 {
     padding: 1rem;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 450px) {
     .contactMeCard {
-        width: 20rem;
+        width: 70%;
     }
 }
 
@@ -60,6 +54,12 @@ h1 {
 .contactMeCardItem > li {
     font-size: 1.2rem;
     color: white;
+}
+
+@media screen and (max-width: 450px) {
+    .contactMeCardItem > li {
+        font-size: 1rem;
+    }
 }
 
 .contactMeCardItem > li:first-child {
